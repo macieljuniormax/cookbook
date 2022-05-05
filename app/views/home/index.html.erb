@@ -9,10 +9,9 @@
     <body>
       <h1>Livro de Receitas</h1>
       <% @recipes.each do |recipe| %> 
-        <dl>
-          <dt><strong>Nome: </strong><%= recipe.name %></dt>
-          <dd><strong>Tipo: </strong><%= recipe.recipe_type %></dd>
-        </dl>
+        <!--<a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a><br>-->
+        <!--<%= link_to recipe.name, recipe_path(recipe.id) %><br>-->
+        <%= link_to recipe.name, recipe %> <br>
       <% end %>
     </body>
   </html>
